@@ -1,35 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
 nav {
     background: #0f172a;
-    padding: 10px;
+    padding: 12px 0;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #38bdf8;
 }
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #0f172a;
+    margin-bottom: 15px;
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* Skills */
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Button */
 .btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
+    margin: 15px 0;
+    padding: 10px 18px;
     background: #2563eb;
-    color: white;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e5e7eb;
+    margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
